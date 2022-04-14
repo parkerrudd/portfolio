@@ -5,6 +5,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
+img {
+    border-radius: 15px;
+}
+
 
 nav {
     position: fixed;
@@ -213,7 +217,20 @@ section {
 } */
 
 h1 {
-    font-family: 'Rubik Bubbles', cursive;;
+    font-family: 'Rubik Bubbles', cursive;
+    color:rgba(255, 255, 255, 0.8)
+}
+
+#work-section-header {
+    font-size: 1.7em;
+    margin-top: 1em;
+    color:rgba(255, 255, 255, .9)
+}
+
+hr {
+    width: 90vw; 
+    color:rgba(255, 255, 255, 0.2);
+    margin-top: .5em;
 }
 
 .song-generator {
@@ -221,7 +238,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 1em;
-    margin-top: 6rem;
+    margin-top: 4em;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -233,8 +250,21 @@ h1 {
     gap: 1em;
 }
 
-#song-gen-photo {
+.website-photos {
     max-width: 50vw;
+    box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.5);
+}
+
+.project-info {
+    max-width: 35vw;
+}
+
+.website-photos:hover {
+    max-width: 50.5vw;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+
+#song-gen-photo {
     margin-left: 1em;
     transition: .3s;
 }
@@ -242,10 +272,6 @@ h1 {
 #song-gen-photo:hover {
     max-width: 50.5vw;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
-}
-
-#song-gen-info {
-    width: 35vw;
 }
 
 .reverb-calculator {
@@ -266,18 +292,8 @@ h1 {
 }
 
 #reverb-calc-photo {
-    max-width: 45vw;
     margin-left: 1em;
     transition: .3s;
-}
-
-#reverb-calc-photo:hover {
-    max-width: 45.5vw;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
-}
-
-#reverb-calc-info {
-    width: 35vw;
 }
 
 .poker-game {
@@ -298,18 +314,8 @@ h1 {
 }
 
 #poker-photo {
-    width: 50vw;
     margin-left: 1em;
     transition: .3s;
-}
-
-#poker-photo:hover {
-    width: 50.5vw;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
-}
-
-#poker-info {
-    max-width: 35vw;
 }
 
 .music-website {
@@ -343,10 +349,6 @@ h1 {
     font-size: 1.1em;
 }
 
-.website-photos {
-    box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.5);
-}
-
 #about {
     height: 100vh; 
     aspect-ratio: 960/300;
@@ -362,11 +364,9 @@ h1 {
     justify-content: center;
     align-items: center;
     max-width: 60vw;
-    gap: 3em;
-}
-
-img {
-    border-radius: 40px;
+    gap: 1em;
+    margin-top: 1em;
+    
 }
 
 .about-me {
@@ -395,3 +395,49 @@ img {
     font-size: 2.3em;
     color:rgba(255, 255, 255, 1.0)
 }
+
+
+@media screen and (max-width: 800px) {
+    .song-generator {
+        flex-direction: column;
+    }
+
+    .reverb-calculator {
+        flex-direction: column-reverse;
+    }
+
+    .poker-game {
+        flex-direction: column;
+    }
+
+    .music-website {
+        flex-direction: column-reverse;
+    }
+
+    .website-photos {
+        max-width: 80vw;
+    }
+
+    .website-photos:hover {
+        max-width: 80.5vw;
+    }
+
+    .project-info {
+        max-width: 70vw;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    #headshot {
+        max-width: 50vw;
+    }
+
+    .about-me {
+        font-size: .8em;
+    }
+
+}
+
+

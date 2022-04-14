@@ -1,13 +1,11 @@
-// const navbar = document.querySelector('.nav')
-// const scrollDown = document.querySelector('.scrollDown')
-// let lastScrollY = window.scrollY; 
-
-// window.addEventListener("scroll", () =>  {
-//     if (lastScrollY < window.scrollY) {
-//         navbar.classList.add('nav-hide')
-//     } 
-//     else {
-//         navbar.classList.remove('nav-hide')
-//     } 
-//     lastScrollY = window.scrollY
+// let lastScrollTop = 0; 
+// const navbar = document.getElementById('navbar'); 
+// window.addEventListener('scroll', function() {
+//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+//     if (scrollTop > lastScrollTop) {
+//         navbar.style.top = '-80px'; 
+//     } else {
+//         navbar.style.top = '0'; 
+//     }
+//     lastScrollTop = scrollTop; 
 // })
