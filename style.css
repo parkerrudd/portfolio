@@ -5,10 +5,13 @@
     font-family: 'Oswald', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+  }
+
 img {
     border-radius: 15px;
 }
-
 
 nav {
     position: fixed;
@@ -17,7 +20,22 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    transition: transform 0.5s;
+    transition: transform 0.5s; 
+}
+
+.hide-nav {
+    /* display: none; */
+    transition: .7s; 
+    animation: fadeOut .7s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: .8; 
+    }
+    to {
+        opacity: 0; 
+    }
 }
 
 .nav-links {
@@ -109,7 +127,7 @@ nav {
     color: rgba(255, 255, 255, 0.8);
     text-shadow:  1px 2.3px 2px rgba(83, 60, 53, 0.2);
     transition: .2s;
-    animation: fadeIn 3.2s ease-in;
+    animation: fadeIn 1.2s ease-in;
 }
 
 .nav-links a:hover {
@@ -324,6 +342,7 @@ hr {
     align-items: center;
     gap: 1em;
     margin-top: 5em;
+    margin-bottom: 1em;
     color:rgba(255, 255, 255, 0.8);  
 }
 
@@ -427,7 +446,7 @@ hr {
     }
 
     .info-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #headshot {
@@ -438,6 +457,9 @@ hr {
         font-size: .8em;
     }
 
+    #work-section-header {
+        font-size: 1.6em;
+    }
 }
 
 
