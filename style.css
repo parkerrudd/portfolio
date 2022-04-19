@@ -440,6 +440,78 @@ hr {
     color:rgba(255, 255, 255, 1.0)
 }
 
+#contact {
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-container {
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(168, 214, 204, .8);
+    border-radius: 20px;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+    animation: modalFadeIn .7s;
+}
+
+@keyframes modalFadeIn {
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#email-text {
+    height: 30vh;
+    width: 30vw;
+    padding-bottom: 14em;
+    padding-left: .2em;
+}
+
+#email-address {
+    width: 30vw;
+    padding-left: .2em;
+}
+
+#modal-header {
+    color:rgba(255, 255, 255, .9); 
+    font-size: 2em;
+}
+
+#close {
+    padding: .2em;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 800px) {
     .song-generator {

@@ -90,6 +90,7 @@
                     <li><a href="#homepage">home</a></li>
                     <li><a href="#work">work</a></li>
                     <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <h1 id="about-section-header">About Me</h1> <hr>
@@ -98,7 +99,6 @@
                 <div id="photo">
                     <img id="headshot" src="./bg-image/DSC_0248.jpg" alt="head shot">
                 </div>
-                <p id="email">parkerbrudd@gmail.com</p>
             </div>
             <div class="about-me project-info">
                 <p>Hello! My name is Parker and I love creating enjoyable and interesting user experiences. I am proficient in HTML, CSS, Javascript, and React JS. </p>
@@ -108,8 +108,24 @@
         <footer class="socials">
             <a class="icons" href="https://twitter.com/parkerrudd" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
             <a class="icons" href="https://github.com/parkerrudd" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a class="icons" href=https://www.linkedin.com/in/parker-rudd-72608014a/ target="_blank"><ion-icon name="logo-linkedin"></ion-icon></ion-icon>
+            <button class="icons" id="contact">
+                <ion-icon name="mail-outline"></ion-icon> 
+            </button>
+            <a class="icons" href="https://www.linkedin.com/in/parker-rudd-72608014a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>  
         </footer>
+
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <form action="https://formsubmit.co/parkerbrudd@gmail.com" method="POST">
+                    <h2 id="modal-header">Get In Touch</h2>
+                    <input type="hidden" name="_subject" value="New portfolio inquiry!">
+                    <input id="email-address" type="email" name="email" placeholder="Email address" required>
+                    <textarea name="message" id="email-text" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
+                    <!-- <input id="email-text" type="text" name="name" size="45" placeholder="Write your message here..." required> -->
+                    <button type="submit" id="close">Send</button>
+               </form>
+            </div>
+        </div>
     </section>
 </body>
 </html>
