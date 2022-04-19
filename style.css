@@ -74,7 +74,7 @@ nav {
     background: white;
     border-radius: 1000px;
     animation: floating 10s infinite linear; 
-    box-shadow: 3px 350px 20px 1px rgba(0,0,0,0.2);
+    box-shadow: 3px 350px 30px 1px rgba(0,0,0,0.2);
 }
 
 .cloud::before {
