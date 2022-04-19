@@ -352,7 +352,7 @@ hr {
     align-items: center;
     gap: 1em;
     margin-top: 10em;
-    margin-bottom: 3em;
+    margin-bottom: 1.2em;
     color:rgba(255, 255, 255, 0.8);  
 }
 
@@ -418,6 +418,11 @@ hr {
     color: rgba(255, 255, 255, 0.8);
 }
 
+#headshot {
+    max-width: 25vw;
+    border-radius: 300px;
+}
+
 .socials {
     position: absolute;
     bottom: 0;
@@ -456,7 +461,7 @@ hr {
     transform: translate(-50%, -50%);
     width: 50vw;
     height: 60vh;
-    background-color: rgb(168, 214, 204, .8);
+    background-color: rgb(168, 214, 204, .9);
     border-radius: 20px;
 }
 
@@ -503,6 +508,20 @@ form {
     padding-left: .2em;
 }
 
+@media screen and (max-width: 600px) {
+    .modal-container {
+        width: 70vw;
+    }
+
+    #email-text {
+        width: 60vw;
+    }
+
+    #email-address {
+        width: 60vw;
+    }
+}
+
 #modal-header {
     color:rgba(255, 255, 255, .9); 
     font-size: 2em;
@@ -547,7 +566,7 @@ form {
     }
 
     #headshot {
-        max-width: 50vw;
+        max-width: 45vw;
     }
 
     .about-me {

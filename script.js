@@ -14,6 +14,7 @@ const open = document.getElementById('contact');
 const modalContainer = document.getElementById('modal_container'); 
 const close = document.getElementById('close'); 
 let timesClicked = 0; 
+
 open.addEventListener('click', () => {
     timesClicked++; 
     if (timesClicked % 2 !== 0) {
@@ -22,6 +23,9 @@ open.addEventListener('click', () => {
         modalContainer.classList.remove('show'); 
     }
 })
+
 close.addEventListener('click', () => {
     modalContainer.classList.remove('show'); 
 })
+
+
