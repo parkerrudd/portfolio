@@ -84,7 +84,7 @@
                     <!-- <li><a href="#homepage">home</a></li> -->
                     <li><a href="#work">work</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a id="navContact" href="#contact">contact</a></li>
             </ul>
         </nav>
         <h1 id="about-section-header">About Me</h1> <hr>
@@ -111,7 +111,10 @@
         <div class="modal-container" id="modal_container">
             <div class="modal">
                 <form action="https://formsubmit.co/bcbe61cbb35ae1211935516e074f0d38" method="POST">
-                    <h2 id="modal-header">Get In Touch</h2>
+                    <div class="modal-top">
+                        <h2 id="modal-header">Get In Touch</h2>
+                        <a id="exit-modal"><ion-icon name="close-circle-outline"></ion-icon></a>
+                    </div>
                     <input type="hidden" name="_subject" value="New portfolio inquiry!">
                     <input id="email-address" type="email" name="email" placeholder="Email address" required>
                     <textarea name="message" id="email-text" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
