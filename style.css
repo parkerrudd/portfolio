@@ -514,6 +514,7 @@ form {
 
 #email-text {
     height: 30vh;
+    max-height: 30vh;
     width: 30vw;
     padding-bottom: 14em;
     padding-left: .2em;
@@ -548,8 +549,14 @@ form {
 }
 
 #close {
-    padding: .2em;
+    padding: 0 1.2em;
     cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+#close:hover {
+    background-color: rgb(228, 219, 219);
 }
 
 @media screen and (max-width: 800px) {
